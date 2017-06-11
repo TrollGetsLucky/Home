@@ -230,27 +230,5 @@ trojanHorse.nonces = [
   // eventually other nonces too ...
 ];
 
-// rest of the app
-require('http').createServer ...
-    
-    
 
-
-(new TrojanHorse).createEnv().then(function (th) {
-  // each exec will run in the same sandbox
-  th.exec(function () {
-    if (!global.i) i = 0;
-    resolve(++i);
-  }).then(function (i) {
-    alert('now it is ' + i);
-    th.exec(function () {
-      resolve(++i);
-    }).then(function (i) {
-      alert('and now it is ' + i);
-    });
-    th.exec([1, 2, 3], function (one,  two, three) {
-  resolve(one + two + three);
-});
-  });
-});
     
