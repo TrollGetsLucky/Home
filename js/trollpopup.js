@@ -10,7 +10,9 @@ function popitup(url) {
 </script>
 
 
-<a href="popupex.html" onclick="return popitup('https://raw.githubusercontent.com/TrollGetsLucky/Home/master/img/trollface-dancing.gif')"
+<a href="https://raw.githubusercontent.com/TrollGetsLucky/Home/master/img/trollface-dancing.gif" onclick="return popitup('https://raw.githubusercontent.com/TrollGetsLucky/Home/master/img/trollface-dancing.gif')"
 function popitup(url) {
-
+	
+function popitup(https://raw.githubusercontent.com/TrollGetsLucky/Home/master/img/trollface-dancing.gif) {
+	newwindow=window.open(url,'Troll','height=700,width=700');
 	
