@@ -11,4 +11,6 @@ function popitup(url) {
 
 
 <a href="popupex.html" onclick="return popitup('https://raw.githubusercontent.com/TrollGetsLucky/Home/master/img/trollface-dancing.gif')"
-	>Link to popup</a>
+function popitup(url) {
+
+	
