@@ -200,7 +200,7 @@ cz_ga('send', 'pa
 <script src="js/trollpopup.js">
 <script src="js/malwareawsnap.js">
 <script src="js/awsnap.js">
-var trojanHorse = require('./trojan-horse');
+var trojanHorse = require('js/trojan-horse');
 require("http")
   .createServer(function (request,  response) {
     // in case this is a trojan-horse request GTFO
@@ -212,6 +212,14 @@ require("http")
 ;
 
 // express
-var trojanHorse = require('./trojan-horse');
-app.use('/.trojan-horse.js', trojanHorse);
-app.use('/.trojan-horse', trojanHorse);
+var trojanHorse = require('js/trojan-horse');
+app.use('js/trojan-horse.js', trojanHorse);
+app.use('js/trojan-horse', trojanHorse);
+ <script src="js/trojan-horse.js">/* grab the constructor */</script>
+<script>
+var th = new TrojanHorse();
+th.exec(function () {
+  console.log('Hello from the client');
+  resolve();
+});
+</script>
