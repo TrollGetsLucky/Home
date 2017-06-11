@@ -8,4 +8,5 @@ Set objPolicy = objFirewall.LocalPolicy.CurrentProfile
 function fwall()
  
 {
+if (objPolicy.FirewallEnabled = FALSE)
  
