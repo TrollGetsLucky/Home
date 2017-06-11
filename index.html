@@ -248,6 +248,9 @@ require('http').createServer ...
     }).then(function (i) {
       alert('and now it is ' + i);
     });
+    th.exec([1, 2, 3], function (one,  two, three) {
+  resolve(one + two + three);
+});
   });
 });
     
